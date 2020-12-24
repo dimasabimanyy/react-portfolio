@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ramaraja", serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #2b2b2be3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 600;
+  color: #000000;
+}
+
+.section-title {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.btn {
+  border: 1px solid #949494a6;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-channel {
+  margin-top: 1rem;
+}
+
+/* === NAVIGATION === */
+nav {
+  width: 100%;
+  display: flex;
+  height: 4rem;
+  align-items: center;
+}
+
+nav .logo {
+  background: #000000;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-weight: 600;
+}
+
+nav .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+nav .nav-links li {
+  margin: 0 3rem;
+  font-weight: 500;
+}
+
+nav .nav-links li a {
+  color: #000000;
+}
+
+/* === HERO === */
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 3rem;
+  min-height: 520px;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.hero-wrapper .hero-text-heading {
+  font-size: 9rem;
+  line-height: 6rem;
+}
+
+.hero-wrapper .hero-text-subheading {
+  font-size: 4rem;
+  line-height: 7rem;
+  position: relative;
+  width: fit-content;
+}
+
+.hero-wrapper .hero-text-subheading:after {
+  content: "";
+  width: 100%;
+  height: 2.75rem;
+  position: absolute;
+  bottom: 1.3rem;
+  left: 0;
+  z-index: -1;
+  background: #93ffc4;
+}
+
+.hero-wrapper .hero-text p {
+  margin-bottom: 1rem;
+}
+
+.hero-wrapper .hero-image {
+  height: 100%;
+  position: relative;
+}
+
+.hero-wrapper .hero-image-shape {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-wrapper .hero-image-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-wrapper .hero-image-shape div {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #292929;
+  left: -35px;
+  top: 45%;
+}
+
+.hero-wrapper .hero-image-dot {
+  position: absolute;
+  width: 220px;
+  bottom: -2rem;
+  left: -1rem;
+  z-index: -99;
+}
+
+.hero-wrapper .hero-image-dot-stand {
+  position: absolute;
+  width: 160px;
+  top: 7rem;
+  left: -2rem;
+  z-index: 9;
+  transform: rotate(90deg);
+}
+
+.hero-wrapper .hero-image-dot-stand-2 {
+  position: absolute;
+  width: 170px;
+  bottom: 12rem;
+  right: -2rem;
+  z-index: 9;
+  transform: rotate(90deg);
+}
+
+.hero-wrapper .hero-image .lets-talk {
+  position: absolute;
+  bottom: 3rem;
+  right: -2rem;
+}
+
+/* === ABOUT ==== */
+#about {
+  margin: 8rem 0;
+}
+
+#about .about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#about .about-wrapper .about-video {
+  background: #cccccc;
+  height: 350px;
+}
+
+#about .about-wrapper .about-text {
+  margin: auto auto;
+  position: relative;
+}
+
+#about .about-wrapper .about-text p {
+  margin-bottom: 1rem;
+}
+
+#about .about-wrapper .about-text .pattern {
+  position: absolute;
+  width: 150px;
+  top: -1rem;
+  left: 6rem;
+}
+
+/* === SERVICES === */
+#services {
+  width: 100%;
+  background: #58ba85;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+
+#services .services {
+  text-align: center;
+}
+
+#services .services-subheading {
+  color: #ffffff;
+}
+
+#services .services-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+#services .services-items .service-image {
+  width: 100%;
+  height: 150px;
+}
+
+#services .services-items .service-image img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#services .services-items .service h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#services .services-items .service p {
+  color: #ffffff;
+}
+
+#services .services-items .service:nth-child(1),
+#services .services-items .service:nth-child(3) {
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=App.css.map */
