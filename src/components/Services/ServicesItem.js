@@ -1,12 +1,10 @@
 import React from "react";
 
-const ServicesItem = ({ image, title, description }) => {
+const ServicesItem = ({ id, title, description }) => {
   return (
     <div className="service">
-      <div className="service-image">
-        <img src={image} alt={title} />
-      </div>
-      <h1>{title}</h1>
+      <h1 className="service-number">0{id}</h1>
+      <h2>{title}</h2>
       <p>{description}</p>
     </div>
   );

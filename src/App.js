@@ -3,14 +3,24 @@ import Hero from "./components/Header/HeroContainer";
 import Navigation from "./components/Header/Navigation";
 import AboutContainer from "./components/About/AboutContainer";
 import ServicesContainer from "./components/Services/ServicesContainer";
+import SkillSetContainer from "./components/SkillSet/SkillSetContainer";
+import ProjectsContainer from "./components/Projects/ProjectsContainer";
+import Youtube from "./components/Youtube/Youtube";
+import ContactContainer from "./components/Contact/ContactContainer";
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Hero />
-      <AboutContainer />
+      <header>
+        <Navigation />
+        <Hero />
+      </header>
       <ServicesContainer />
+      <AboutContainer />
+      <SkillSetContainer />
+      <ProjectsContainer />
+      <Youtube />
+      <ContactContainer />
     </div>
   );
 }

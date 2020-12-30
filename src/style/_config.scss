@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
 // Font
-$font-stack: "Poppins", sans-serif;
-$font-unique: "Ramaraja", serif;
+$font-stack: "Sen", sans-serif;
 
 // Color
 $green-light: #93ffc4;
 $green-dark: #58ba85;
 $gray-light: #2b2b2be3;
 $dark: #000000;
+$light: #ffffff;
+$gray: #8491a0;
+$gray-dark: #5b6876;
+$purple-dark: #5221e6;
 
 * {
   margin: 0;
@@ -15,7 +20,10 @@ $dark: #000000;
 }
 
 body {
+  background: $dark;
   font-family: $font-stack;
+  color: $light;
+  overflow-x: hidden;
 }
 
 h1,
@@ -24,14 +32,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-unique;
+  font-family: $font-stack;
   font-weight: 500;
+  color: $light;
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 26px;
-  color: $gray-light;
+  color: $gray;
 }
 
 a {

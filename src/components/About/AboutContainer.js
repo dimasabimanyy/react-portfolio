@@ -1,13 +1,13 @@
 import React from "react";
-import AboutVideo from "./AboutVideo";
+import AboutImage from "./AboutImage";
 import AboutText from "./AboutText";
 
 const AboutContainer = () => {
   return (
     <section id="about">
-      <div className="about-wrapper container">
-        <AboutVideo />
+      <div className="about container">
         <AboutText />
+        <AboutImage />
       </div>
     </section>
   );
