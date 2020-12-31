@@ -35,7 +35,7 @@ header {
       display: flex;
       list-style: none;
       & li {
-        padding: 25px 30px;
+        padding: 28px 25px;
         a {
           color: $light;
         }
@@ -46,6 +46,113 @@ header {
         cursor: pointer;
       }
     }
+    .hamburger {
+      display: none;
+      z-index: 999;
+      cursor: pointer;
+      .line {
+        cursor: pointer;
+        width: 2.5rem;
+        height: 3px;
+        margin: 5px 0;
+        background: $light;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    padding: 1.5rem 0;
+    .nav-wrapper {
+      .hamburger {
+        display: block;
+      }
+      .main-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #181823;
+          z-index: -1;
+        }
+        ul {
+          width: 90%;
+          height: 50%;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: center;
+          li {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            a {
+              font-size: 1.4rem;
+              display: inline-block;
+              transform: translateY(100%);
+            }
+          }
+          .nav-contact {
+            background: none;
+            border: none;
+            a {
+              border: 2px solid $purple-dark;
+              background: $purple-dark;
+              padding: 1rem 2rem;
+              transition: 0.2s ease-in;
+              &:hover {
+                background: transparent;
+              }
+            }
+          }
+        }
+      }
+
+      .active {
+        transform: translateX(0);
+        transition-duration: 0.3s;
+        &:after {
+          animation: nav-bg 0.7s forwards;
+        }
+        a {
+          animation: link-appear 2s forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes nav-bg {
+  from {
+    transform: translateX(-100%) skewX(-50deg);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes link-appear {
+  0%,
+  25% {
+    transform: translateY(100%);
+  }
+  50%,
+  100% {
+    transform: translateY(0);
   }
 }
 

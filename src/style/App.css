@@ -159,7 +159,7 @@ header:after {
 }
 
 .nav-wrapper .nav-links li {
-  padding: 25px 30px;
+  padding: 28px 25px;
 }
 
 .nav-wrapper .nav-links li a {
@@ -170,6 +170,112 @@ header:after {
   background: #5221e6;
   border: 1px solid #5221e6;
   cursor: pointer;
+}
+
+.nav-wrapper .hamburger {
+  display: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.nav-wrapper .hamburger .line {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 3px;
+  margin: 5px 0;
+  background: #ffffff;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    padding: 1.5rem 0;
+  }
+  .nav .nav-wrapper .hamburger {
+    display: block;
+  }
+  .nav .nav-wrapper .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+  }
+  .nav .nav-wrapper .main-nav:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181823;
+    z-index: -1;
+  }
+  .nav .nav-wrapper .main-nav ul {
+    width: 90%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .nav .nav-wrapper .main-nav ul li {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+  }
+  .nav .nav-wrapper .main-nav ul li a {
+    font-size: 1.4rem;
+    display: inline-block;
+    transform: translateY(100%);
+  }
+  .nav .nav-wrapper .main-nav ul .nav-contact {
+    background: none;
+    border: none;
+  }
+  .nav .nav-wrapper .main-nav ul .nav-contact a {
+    border: 2px solid #5221e6;
+    background: #5221e6;
+    padding: 1rem 2rem;
+    transition: 0.2s ease-in;
+  }
+  .nav .nav-wrapper .main-nav ul .nav-contact a:hover {
+    background: transparent;
+  }
+  .nav .nav-wrapper .active {
+    transform: translateX(0);
+    transition-duration: 0.3s;
+  }
+  .nav .nav-wrapper .active:after {
+    animation: nav-bg 0.7s forwards;
+  }
+  .nav .nav-wrapper .active a {
+    animation: link-appear 2s forwards;
+  }
+}
+
+@keyframes nav-bg {
+  from {
+    transform: translateX(-100%) skewX(-50deg);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes link-appear {
+  0%,
+  25% {
+    transform: translateY(100%);
+  }
+  50%,
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* === HERO === */

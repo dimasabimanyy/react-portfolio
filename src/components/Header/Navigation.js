@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navigation = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const toggleNav = () => {
+    toggle ? setToggle(false) : setToggle(true);
+    console.log(toggle);
+  };
+
   return (
     <nav className="nav">
       <div className="nav-wrapper container">
@@ -12,7 +19,8 @@ const Navigation = () => {
         >
           Abimanyu
         </div>
-        <div>
+
+        <div className={toggle ? "main-nav active" : "main-nav"}>
           <ul className="nav-links">
             <li
               data-aos="fade-down"
@@ -44,6 +52,11 @@ const Navigation = () => {
               <a href="contact">Contact</a>
             </li>
           </ul>
+        </div>
+        <div className="hamburger" id="hamburger" onClick={toggleNav}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
         </div>
       </div>
     </nav>
