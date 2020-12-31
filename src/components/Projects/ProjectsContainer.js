@@ -100,7 +100,6 @@ const ProjectsContainer = () => {
             stack={project.stack}
           />
         ))}
-        {/* <ProjectsItems projects={projects} /> */}
         <div
           className="projects-grid projects-btn"
           data-aos="fade-in"
