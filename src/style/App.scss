@@ -6,7 +6,7 @@
 
 header {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   &:after {
     content: "";
@@ -38,7 +38,6 @@ header {
         padding: 25px 30px;
         a {
           color: $light;
-          font-size: 1rem;
         }
       }
       .nav-contact {
@@ -56,7 +55,7 @@ header {
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
   .hero-text {
     h1 {
       font-size: 3rem;
@@ -85,20 +84,18 @@ header {
       font-weight: 700;
     }
     &-heading {
-      font-size: 2.2rem;
       font-weight: 700;
     }
     &-items {
       margin-top: 2.5rem;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 2rem;
       h1 {
         font-size: 4rem;
         color: $gray;
       }
-      h2 {
-        font-size: 1.3rem;
+      h5 {
         font-weight: 700;
         margin: 1rem 0;
       }
@@ -109,10 +106,10 @@ header {
 /* === ABOUT ==== */
 #about {
   background: #fff3e4;
-  padding: 9rem;
+  padding: 9rem 0;
   .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     .about-text {
       display: flex;
@@ -121,7 +118,6 @@ header {
       h1 {
         color: $dark;
         font-weight: 700;
-        font-size: 2.2rem;
       }
       p {
         color: $gray-dark;
@@ -153,8 +149,7 @@ header {
       justify-content: center;
       align-items: center;
       img {
-        position: absolute;
-        width: 65%;
+        max-width: 350px;
         height: 400px;
         object-fit: cover;
       }
@@ -170,18 +165,16 @@ header {
     grid-template-columns: 35% 65%;
     gap: 1.5rem;
     h1 {
-      font-size: 2.2rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
     }
     .skillSet-items {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1rem;
       .skillSet-item {
         padding: 1rem;
-        h2 {
-          font-size: 1.3rem;
+        h4 {
           margin: 1rem 0;
         }
       }
@@ -200,7 +193,7 @@ header {
         width: 100%;
         margin: 0 1rem;
         img {
-          width: 45%;
+          width: 43%;
         }
       }
     }
@@ -211,7 +204,7 @@ header {
 #projects {
   padding: 4rem 0;
   .projects {
-    columns: 2 500px;
+    columns: 2 300px;
     column-gap: 2rem;
     &-grid {
       display: inline-block;
@@ -231,6 +224,7 @@ header {
         color: $light;
         background: $purple-dark;
         transition: 0.3s ease-in;
+        cursor: pointer;
         &:hover {
           background: transparent;
         }
@@ -239,12 +233,9 @@ header {
     &-heading {
       h1 {
         font-weight: 700;
-        font-size: 2.2rem;
       }
       p {
         text-transform: uppercase;
-        font-size: 1rem;
-        letter-spacing: 1px;
         font-weight: 700;
       }
     }
@@ -262,8 +253,7 @@ header {
       }
       &-info {
         padding: 2rem 1.5rem;
-        h2 {
-          font-size: 1.4rem;
+        h4 {
           margin-bottom: 0.5rem;
         }
         &-stack {
@@ -295,7 +285,7 @@ header {
   padding: 4rem 0;
   .youtube {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     &-text {
       height: 500px;
@@ -305,7 +295,6 @@ header {
       h1 {
         color: $dark;
         font-weight: 700;
-        font-size: 2.2rem;
       }
       p {
         color: $gray-dark;
@@ -313,7 +302,6 @@ header {
       }
       a {
         color: $dark;
-        font-size: 1rem;
         width: fit-content;
         position: relative;
       }
@@ -348,12 +336,11 @@ header {
   padding: 4rem 0;
   .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
     &-heading {
       h1 {
         font-weight: 700;
-        font-size: 2.2rem;
         margin-bottom: 1rem;
       }
       &-icons {
@@ -420,7 +407,7 @@ footer {
     color: $gray;
     transition: 0.2s;
     &:hover {
-      color: $purple-dark;
+      color: $purple-light;
     }
     i {
       font-size: 4px;
@@ -428,3 +415,5 @@ footer {
     }
   }
 }
+
+@import "responsive";

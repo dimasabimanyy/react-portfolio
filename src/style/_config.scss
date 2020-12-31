@@ -12,6 +12,7 @@ $light: #ffffff;
 $gray: #8491a0;
 $gray-dark: #5b6876;
 $purple-dark: #5221e6;
+$purple-light: #6437ec;
 
 * {
   margin: 0;
@@ -37,6 +38,25 @@ h6 {
   color: $light;
 }
 
+h1 {
+  font-size: 2.3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.3rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 15px;
   line-height: 26px;
@@ -45,4 +65,29 @@ p {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1.15rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

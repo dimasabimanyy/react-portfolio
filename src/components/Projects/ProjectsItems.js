@@ -9,13 +9,18 @@ const ProjectsItems = ({
   stack,
 }) => {
   return (
-    <div className="project projects-grid">
+    <div
+      className="project projects-grid"
+      data-aos="fade-up-right"
+      data-aos-duration="600"
+      data-aos-delay="300"
+    >
       <div className="project-image">
         {/* <img src={image} alt={title} /> */}
       </div>
       <div className="project-info">
-        <h2>{title}</h2>
-        <div class="project-info-stack">
+        <h4 className="bold">{title}</h4>
+        <div className="project-info-stack">
           {stack.map((item, index) => (
             <p key={index}>{item}</p>
           ))}
@@ -23,10 +28,10 @@ const ProjectsItems = ({
         <p>{description}</p>
         <div className="project-info-links">
           <a href={github} alt={title}>
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
           <a href={preview} alt={title}>
-            <i class="fas fa-external-link-alt"></i>
+            <i className="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>

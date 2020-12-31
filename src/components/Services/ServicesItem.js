@@ -16,7 +16,7 @@ const ServicesItem = ({
       data-aos-delay={aosDelay}
     >
       <h1 className="service-number">0{id}</h1>
-      <h2>{title}</h2>
+      <h5 className="bold">{title}</h5>
       <p>{description}</p>
     </div>
   );

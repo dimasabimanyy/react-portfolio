@@ -53,26 +53,29 @@ const SkillSetContainer = () => {
   ];
 
   const myTech = [
-    { icon: html },
-    { icon: css },
-    { icon: scss },
-    { icon: javascript },
-    { icon: react },
-    { icon: gatsby },
-    { icon: vue },
-    { icon: php },
-    { icon: laravel },
-    { icon: wordpress },
-    { icon: git },
-    { icon: github },
-    { icon: postman },
+    { icon: html, aosDelay: "300" },
+    { icon: css, aosDelay: "400" },
+    { icon: scss, aosDelay: "500" },
+    { icon: javascript, aosDelay: "600" },
+    { icon: react, aosDelay: "700" },
+    { icon: gatsby, aosDelay: "800" },
+    { icon: vue, aosDelay: "900" },
+    { icon: php, aosDelay: "1000" },
+    { icon: laravel, aosDelay: "1100" },
+    { icon: wordpress, aosDelay: "1200" },
+    { icon: figma, aosDelay: "1300" },
+    { icon: git, aosDelay: "1400" },
+    { icon: github, aosDelay: "1500" },
+    { icon: postman, aosDelay: "1600" },
   ];
   return (
     <div id="skillSet">
       <div className="skillSet container">
         <div className="skillSet-heading">
-          <h1>Skillset</h1>
-          <p>
+          <h1 data-aos="fade-up" data-aos-duration="600">
+            Skillset
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="600">
             With skills in over 4 different fields of design, I am the perfect
             person to hire when it comes to a full fledged project. Whatever
             your needs are, I can pretty much take on any challenge.
@@ -85,16 +88,12 @@ const SkillSetContainer = () => {
               icon={skill.icon}
               title={skill.title}
               description={skill.description}
+              aosDelay={skill.aosDelay}
             />
           ))}
         </div>
       </div>
       <div className="skillSet-bottom">
-        {/* {myTech.map((tech, index) => (
-          <div key={index}>
-            <img src={tech.icon} alt="skillset" />
-          </div>
-        ))} */}
         <SkillSetSlider tech={myTech} />
       </div>
     </div>

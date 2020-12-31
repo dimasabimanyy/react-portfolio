@@ -1,0 +1,171 @@
+@media screen and (max-width: 900px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+    .hero-text {
+      order: 2;
+      h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .hero-image {
+      text-align: center;
+      img {
+        width: 65%;
+      }
+    }
+  }
+
+  #services {
+    padding: 6rem 0;
+  }
+
+  #skillSet {
+    .skillSet {
+      grid-template-columns: 1fr;
+      &-bottom {
+        margin-top: 2rem;
+      }
+      &-bottom {
+        .slide-tech {
+          img {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    .projects {
+      &-btn {
+        .btn {
+          width: 145px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  #youtube {
+    padding: 3rem 0;
+    .youtube {
+      &-text {
+        height: fit-content;
+        p {
+          margin: 1rem 0 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .hero-wrapper {
+    min-height: 75vh;
+    .hero-text {
+      h1 {
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+      }
+    }
+    .hero-image {
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  #services {
+    .services {
+      &-items {
+        h1 {
+          font-size: 3rem;
+        }
+        h5 {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+  }
+
+  #about {
+    padding: 5rem 0;
+    .about {
+      .about-text {
+        p {
+          margin: 1.3rem 0 3rem;
+        }
+      }
+      &-image {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #projects {
+    padding: 2rem 0;
+    .projects {
+      &-grid {
+        margin-bottom: 3rem;
+      }
+      .project {
+        .project-image {
+          height: 350px;
+        }
+        &-info {
+        }
+      }
+    }
+  }
+
+  #skillSet {
+    .skillSet {
+      &-items {
+        .skillSet-item {
+          padding: 0 !important;
+          margin-bottom: 1.5rem;
+        }
+      }
+      &-bottom {
+        .slide-tech {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    margin: 1rem 0;
+    .contact {
+      &-form {
+        form {
+          button {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    a {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hero-wrapper {
+    .hero-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

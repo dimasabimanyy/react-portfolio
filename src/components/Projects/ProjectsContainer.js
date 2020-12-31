@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import project1 from "../../images/project-1.png";
 import project2 from "../../images/project-2.png";
 import project3 from "../../images/project-3.png";
@@ -6,6 +6,9 @@ import project4 from "../../images/project-4.png";
 import ProjectsItems from "./ProjectsItems";
 
 const ProjectsContainer = () => {
+  const [itemsToShow, setItemsToShow] = useState(4);
+  const [expanded, setExpanded] = useState(false);
+
   const projects = [
     {
       id: 1,
@@ -47,15 +50,46 @@ const ProjectsContainer = () => {
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
       stack: ["react", "vue", "materialize"],
     },
+    {
+      id: 5,
+      image: project4,
+      github: "/",
+      preview: "/",
+      title: "Wordpress Development",
+      description:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
+    },
+    {
+      id: 6,
+      image: project4,
+      github: "/",
+      preview: "/",
+      title: "Wordpress Development",
+      description:
+        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
+    },
   ];
+
+  const showMore = () => {
+    itemsToShow === 4 ? setItemsToShow(projects.length) : setItemsToShow(4);
+
+    if (expanded === false ? setExpanded(true) : setExpanded(false));
+  };
+
   return (
     <div id="projects">
       <div className="projects container">
         <div className="projects-heading projects-grid">
-          <p>My Projects</p>
-          <h1>Some work that i've done for the past few years</h1>
+          <p data-aos="fade-up" data-aos-duration="600">
+            My Projects
+          </p>
+          <h1 data-aos="fade-up" data-aos-duration="600">
+            Some work that i've done for the past few years
+          </h1>
         </div>
-        {projects.map((project, index) => (
+        {projects.slice(0, itemsToShow).map((project, index) => (
           <ProjectsItems
             key={index}
             image={project.image}
@@ -66,10 +100,15 @@ const ProjectsContainer = () => {
             stack={project.stack}
           />
         ))}
-        <div className="projects-grid projects-btn">
-          <a href="/" className="btn">
-            View All Projects
-          </a>
+        {/* <ProjectsItems projects={projects} /> */}
+        <div
+          className="projects-grid projects-btn"
+          data-aos="fade-in"
+          data-aos-duration="600"
+        >
+          <div className="btn" onClick={showMore}>
+            {expanded ? <span>Show Less</span> : <span>Show More</span>}
+          </div>
         </div>
       </div>
     </div>

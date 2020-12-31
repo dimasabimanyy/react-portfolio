@@ -4,11 +4,11 @@
 }
 
 .bold {
-  font-weight: 600;
-  color: #000000;
+  font-weight: 700;
 }
 
-.section-title {
-  font-size: 3rem;
-  line-height: 3rem;
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
