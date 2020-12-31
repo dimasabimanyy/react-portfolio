@@ -7,6 +7,7 @@ import SkillSetContainer from "./components/SkillSet/SkillSetContainer";
 import ProjectsContainer from "./components/Projects/ProjectsContainer";
 import Youtube from "./components/Youtube/Youtube";
 import ContactContainer from "./components/Contact/ContactContainer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ProjectsContainer />
       <Youtube />
       <ContactContainer />
+      <Footer />
     </div>
   );
 }

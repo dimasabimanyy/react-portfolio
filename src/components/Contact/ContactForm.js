@@ -16,6 +16,9 @@ const ContactForm = () => {
           <label for="message">Message</label>
           <textarea type="text" name="message"></textarea>
         </div>
+        <button type="submit" className="btn btn-fill">
+          Let's get started
+        </button>
       </form>
     </div>
   );

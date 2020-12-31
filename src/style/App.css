@@ -34,7 +34,7 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 1150px;
   margin: 0 auto;
 }
 
@@ -46,11 +46,6 @@ a {
 .section-title {
   font-size: 3rem;
   line-height: 3rem;
-}
-
-.rec.rec-arrow {
-  background: #5221e6;
-  opacity: 0.7;
 }
 
 .rec.rec-arrow:hover {
@@ -115,7 +110,7 @@ header:after {
 }
 
 .nav-wrapper .nav-links li {
-  padding: 32px 30px;
+  padding: 25px 30px;
 }
 
 .nav-wrapper .nav-links li a {
@@ -138,9 +133,9 @@ header:after {
 }
 
 .hero-wrapper .hero-text h1 {
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 3.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -154,7 +149,7 @@ header:after {
 
 /* === SERVICES === */
 #services {
-  padding: 7rem 0;
+  padding: 9rem 0;
 }
 
 #services .services-subheading {
@@ -163,7 +158,7 @@ header:after {
 }
 
 #services .services-heading {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 
@@ -171,15 +166,16 @@ header:after {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 #services .services-items h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #8491a0;
 }
 
 #services .services-items h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin: 1rem 0;
 }
@@ -187,7 +183,7 @@ header:after {
 /* === ABOUT ==== */
 #about {
   background: #fff3e4;
-  height: 500px;
+  padding: 9rem;
 }
 
 #about .about {
@@ -197,7 +193,6 @@ header:after {
 }
 
 #about .about .about-text {
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,7 +201,7 @@ header:after {
 #about .about .about-text h1 {
   color: #000000;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 #about .about .about-text p {
@@ -216,7 +211,7 @@ header:after {
 
 #about .about .about-text a {
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: fit-content;
   position: relative;
 }
@@ -229,6 +224,11 @@ header:after {
   position: absolute;
   bottom: -5px;
   left: 0;
+  transition: 0.2s;
+}
+
+#about .about .about-text a:hover:after {
+  bottom: 0;
 }
 
 #about .about .about-image {
@@ -245,8 +245,9 @@ header:after {
   object-fit: cover;
 }
 
+/* === SKILLSET === */
 #skillSet {
-  padding: 7rem 0;
+  padding: 6rem 0;
 }
 
 #skillSet .skillSet {
@@ -256,7 +257,7 @@ header:after {
 }
 
 #skillSet .skillSet h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -272,12 +273,13 @@ header:after {
 }
 
 #skillSet .skillSet .skillSet-items .skillSet-item h2 {
+  font-size: 1.3rem;
   margin: 1rem 0;
 }
 
 #skillSet .skillSet-bottom {
   display: flex;
-  margin-top: 3rem;
+  margin-top: 6rem;
   border-top: 1px solid #1b1b1bd5;
   border-bottom: 1px solid #1b1b1bd5;
   padding: 0 2rem;
@@ -293,26 +295,31 @@ header:after {
 }
 
 #skillSet .skillSet-bottom .slide-tech img {
-  width: 60%;
+  width: 45%;
 }
 
-.projects {
+/* === PROJECTS === */
+#projects {
+  padding: 4rem 0;
+}
+
+#projects .projects {
   columns: 2 500px;
   column-gap: 2rem;
 }
 
-.projects-grid {
+#projects .projects-grid {
   display: inline-block;
   margin-bottom: 5rem;
 }
 
-.projects-btn {
+#projects .projects-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.projects-btn .btn {
+#projects .projects-btn .btn {
   width: 170px;
   height: 50px;
   display: flex;
@@ -324,49 +331,74 @@ header:after {
   transition: 0.3s ease-in;
 }
 
-.projects-btn .btn:hover {
+#projects .projects-btn .btn:hover {
   background: transparent;
 }
 
-.projects-heading h1 {
+#projects .projects-heading h1 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
-.projects-heading p {
+#projects .projects-heading p {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 700;
 }
 
-.projects .project {
+#projects .projects .project {
   background: #181823;
 }
 
-.projects .project .project-image {
+#projects .projects .project .project-image {
   width: 100%;
   height: 400px;
   background: #cccccc;
 }
 
-.projects .project .project-image img {
+#projects .projects .project .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.projects .project-info {
-  padding: 2.5rem 2rem;
+#projects .projects .project-info {
+  padding: 2rem 1.5rem;
 }
 
-.projects .project-info h2 {
+#projects .projects .project-info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+#projects .projects .project-info-stack {
+  display: flex;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
+#projects .projects .project-info-stack p {
+  color: #5b6876;
+}
+
+#projects .projects .project-info-links {
+  margin-top: 1.5rem;
+}
+
+#projects .projects .project-info-links a {
+  margin-right: 1rem;
+}
+
+#projects .projects .project-info-links a i {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+/* === YOUTUBE === */
 #youtube {
   background: #fff3e4;
-  height: 500px;
+  padding: 4rem 0;
 }
 
 #youtube .youtube {
@@ -385,7 +417,7 @@ header:after {
 #youtube .youtube-text h1 {
   color: #000000;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 #youtube .youtube-text p {
@@ -395,7 +427,7 @@ header:after {
 
 #youtube .youtube-text a {
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: fit-content;
   position: relative;
 }
@@ -408,6 +440,11 @@ header:after {
   position: absolute;
   bottom: -5px;
   left: 0;
+  transition: 0.2s;
+}
+
+#youtube .youtube-text a:hover:after {
+  bottom: 0;
 }
 
 #youtube .youtube-image {
@@ -418,5 +455,98 @@ header:after {
 
 #youtube .youtube-image img {
   width: 100%;
+}
+
+/* === CONTACT === */
+#contact {
+  margin: 3rem 0;
+  padding: 4rem 0;
+}
+
+#contact .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#contact .contact-heading h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+#contact .contact-heading-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+#contact .contact-heading-icons a i {
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+
+#contact .contact-heading-icons a i:hover {
+  color: #8491a0;
+}
+
+#contact .contact-form form .form-control {
+  margin-bottom: 2rem;
+}
+
+#contact .contact-form form .form-control input,
+#contact .contact-form form .form-control textarea {
+  margin-top: 0.5rem;
+  width: 100%;
+  background: #181823;
+  border: none;
+  padding: 1rem;
+  outline: none;
+  color: #ffffff;
+  font-family: "Sen", sans-serif;
+  font-size: 1rem;
+}
+
+#contact .contact-form form button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1.1rem 0;
+  font-size: 1rem;
+  font-family: "Sen", sans-serif;
+  color: #ffffff;
+  background: #5221e6;
+  border: 1px solid #5221e6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#contact .contact-form form button:hover {
+  background: transparent;
+}
+
+/* === FOOTER === */
+footer {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8491a0;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: #5221e6;
+}
+
+footer a i {
+  font-size: 4px;
+  margin: 0 0.5rem;
 }
 /*# sourceMappingURL=App.css.map */

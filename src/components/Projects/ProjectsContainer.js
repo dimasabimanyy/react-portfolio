@@ -10,30 +10,42 @@ const ProjectsContainer = () => {
     {
       id: 1,
       image: project1,
+      github: "/",
+      preview: "/",
       title: "Web Design",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
     },
     {
       id: 2,
       image: project2,
+      github: "/",
+      preview: "/",
       title: "Web Development",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
     },
     {
       id: 3,
       image: project3,
+      github: "/",
+      preview: "/",
       title: "Wordpress Development",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
     },
     {
       id: 4,
       image: project4,
+      github: "/",
+      preview: "/",
       title: "Wordpress Development",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+      stack: ["react", "vue", "materialize"],
     },
   ];
   return (
@@ -49,6 +61,9 @@ const ProjectsContainer = () => {
             image={project.image}
             title={project.title}
             description={project.description}
+            github={project.github}
+            preview={project.preview}
+            stack={project.stack}
           />
         ))}
         <div className="projects-grid projects-btn">
