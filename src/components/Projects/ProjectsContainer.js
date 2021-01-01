@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import project1 from "../../images/project-1.png";
-import project2 from "../../images/project-2.png";
-import project3 from "../../images/project-3.png";
-import project4 from "../../images/project-4.png";
+import React, { useState } from "react";
+import project1 from "../../images/projects/Github Profiler.png";
+import project3 from "../../images/projects/Hotel Resort.png";
+import project4 from "../../images/projects/Portfolio v3.png";
+import project2 from "../../images/projects/Covid Tracker.png";
 import ProjectsItems from "./ProjectsItems";
 
 const ProjectsContainer = () => {

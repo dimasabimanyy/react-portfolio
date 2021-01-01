@@ -16,7 +16,7 @@ const ProjectsItems = ({
       data-aos-delay="300"
     >
       <div className="project-image">
-        {/* <img src={image} alt={title} /> */}
+        <img src={image} alt={title} />
       </div>
       <div className="project-info">
         <h4 className="bold">{title}</h4>
