@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media all and (max-width: 900px) {
   .hero-wrapper {
     grid-template-columns: 1fr;
     .hero-text {
@@ -59,9 +59,20 @@
       }
     }
   }
+
+  #contact {
+    .contact {
+      &-heading {
+        text-align: center;
+        &-icons {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 680px) {
+@media all and (max-width: 680px) {
   .hero-wrapper {
     min-height: 75vh;
     .hero-text {
@@ -114,9 +125,10 @@
       }
       .project {
         .project-image {
-          height: 350px;
+          height: 275px;
         }
-        &-info {
+        .project-info {
+          padding: 1rem;
         }
       }
     }
@@ -160,11 +172,27 @@
   }
 }
 
-@media screen and (max-width: 580px) {
+@media all and (max-width: 580px) {
   .hero-wrapper {
     .hero-image {
       img {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 450px) {
+  #projects {
+    padding: 2rem 0;
+    .projects {
+      &-grid {
+        margin-bottom: 3rem;
+      }
+      .project {
+        .project-image {
+          height: 235px;
+        }
       }
     }
   }

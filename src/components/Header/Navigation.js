@@ -53,10 +53,14 @@ const Navigation = () => {
             </li>
           </ul>
         </div>
-        <div className="hamburger" id="hamburger" onClick={toggleNav}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+        <div
+          className={toggle ? "open" : ""}
+          id="hamburger"
+          onClick={toggleNav}
+        >
+          <span className="line"></span>
+          <span className="line"></span>
+          <span className="line"></span>
         </div>
       </div>
     </nav>
