@@ -105,7 +105,7 @@ const ProjectsContainer = () => {
           data-aos="fade-in"
           data-aos-duration="600"
         >
-          <div className="btn" onClick={showMore}>
+          <div className="btn btn-purple" onClick={showMore}>
             {expanded ? <span>Show Less</span> : <span>Show More</span>}
           </div>
         </div>

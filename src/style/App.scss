@@ -37,15 +37,14 @@ header {
       display: flex;
       list-style: none;
       & li {
-        padding: 28px 25px;
+        padding: 2.5rem 2rem;
         a {
           color: $light;
+          transition: 0.2s;
         }
-      }
-      .nav-contact {
-        background: $purple-dark;
-        border: 1px solid $purple-dark;
-        cursor: pointer;
+        a:hover {
+          color: $gray;
+        }
       }
     }
     #hamburger {
@@ -237,14 +236,18 @@ header {
       display: flex;
       align-items: center;
       .btn-cv {
+        font-size: 0.9rem;
         margin-right: 2rem;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
           rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        i {
+          margin-right: 0.5rem;
+        }
       }
       .hero-social {
         margin: 0 1rem;
         i {
-          font-size: 2rem;
+          font-size: 1.5rem;
           color: $gray;
           transition: 0.3s ease-in;
         }
