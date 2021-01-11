@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../../images/logo.svg";
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +18,7 @@ const Navigation = () => {
           data-aos-duration="500"
           data-aos-delay="150"
         >
-          Abimanyu
+          <img src={logo} alt="Dimas Abimanyu" />
         </div>
 
         <div className={toggle ? "main-nav active" : "main-nav"}>

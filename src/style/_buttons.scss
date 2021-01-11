@@ -21,3 +21,22 @@ button.rec-dot {
 .rec.rec-arrow:disabled {
   visibility: hidden;
 }
+
+// Buttons
+
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid $purple-dark;
+  color: $light;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+}
+
+.btn-purple {
+  background: $purple-dark;
+}
+
+.btn-purple:hover {
+  transform: translateY(-5px);
+  background: transparent;
+}

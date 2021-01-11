@@ -29,8 +29,9 @@ header {
     align-items: center;
     justify-content: space-between;
     .logo {
-      color: #ffffff;
-      font-size: 1.2rem;
+      img {
+        width: 45px;
+      }
     }
     .nav-links {
       display: flex;
@@ -229,6 +230,27 @@ header {
       margin-bottom: 1.5rem;
       span {
         color: $gray;
+      }
+    }
+    &-links {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      .btn-cv {
+        margin-right: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      }
+      .hero-social {
+        margin: 0 1rem;
+        i {
+          font-size: 2rem;
+          color: $gray;
+          transition: 0.3s ease-in;
+        }
+        i:hover {
+          color: $light;
+        }
       }
     }
   }

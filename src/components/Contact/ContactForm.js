@@ -3,7 +3,7 @@ import React from "react";
 const ContactForm = () => {
   return (
     <div className="contact-form">
-      <form>
+      <form action="https://formspree.io/f/moqppgyd" method="POST">
         <div
           className="form-control"
           data-aos="fade-up"

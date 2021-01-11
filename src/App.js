@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <div class="loading">
+        <div class={loading ? "loading" : "loading off"}>
           <div class="body">
             <span>
               <span></span>

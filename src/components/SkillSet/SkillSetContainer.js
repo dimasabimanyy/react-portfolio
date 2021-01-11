@@ -71,11 +71,13 @@ const SkillSetContainer = () => {
   return (
     <div id="skillSet">
       <div className="skillSet container">
-        <div className="skillSet-heading">
-          <h1 data-aos="fade-up" data-aos-duration="600">
-            Skillset
-          </h1>
-          <p data-aos="fade-up" data-aos-duration="600">
+        <div
+          className="skillSet-heading"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <h1>Skillset</h1>
+          <p>
             With skills in over 4 different fields of design, I am the perfect
             person to hire when it comes to a full fledged project. Whatever
             your needs are, I can pretty much take on any challenge.

@@ -120,6 +120,23 @@ button.rec-dot {
   visibility: hidden;
 }
 
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid #5221e6;
+  color: #ffffff;
+  border-radius: 3px;
+  transition: 0.3s ease-in;
+}
+
+.btn-purple {
+  background: #5221e6;
+}
+
+.btn-purple:hover {
+  transform: translateY(-5px);
+  background: transparent;
+}
+
 .loading {
   background: linear-gradient(to right, #ffefba, white);
   width: 100%;
@@ -420,9 +437,8 @@ header:after {
   justify-content: space-between;
 }
 
-.nav-wrapper .logo {
-  color: #ffffff;
-  font-size: 1.2rem;
+.nav-wrapper .logo img {
+  width: 45px;
 }
 
 .nav-wrapper .nav-links {
@@ -608,6 +624,31 @@ header:after {
 
 .hero-wrapper .hero-text h1 span {
   color: #8491a0;
+}
+
+.hero-wrapper .hero-text-links {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrapper .hero-text-links .btn-cv {
+  margin-right: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.hero-wrapper .hero-text-links .hero-social {
+  margin: 0 1rem;
+}
+
+.hero-wrapper .hero-text-links .hero-social i {
+  font-size: 2rem;
+  color: #8491a0;
+  transition: 0.3s ease-in;
+}
+
+.hero-wrapper .hero-text-links .hero-social i:hover {
+  color: #ffffff;
 }
 
 .hero-wrapper .hero-image img {
