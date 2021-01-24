@@ -17,33 +17,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (
     <div className="App">
       {loading ? (
-        <div class={loading ? "loading" : "loading off"}>
-          <div class="body">
-            <span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-            <div class="base">
-              <span></span>
-              <div class="face"></div>
-            </div>
-          </div>
-          <div class="longfazers">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <h1 className="loading-title">Loading...</h1>
-        </div>
+        <Loading />
       ) : (
         <>
           <header>
