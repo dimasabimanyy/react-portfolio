@@ -75,15 +75,30 @@
 @media all and (max-width: 680px) {
   .hero-wrapper {
     min-height: 75vh;
+    text-align: center;
     .hero-text {
       h1 {
-        font-size: 1.9rem;
-        line-height: 2.5rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+      }
+      &-links {
+        margin-top: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+        .btn-cv {
+          margin-right: 1rem;
+          padding: 10px 15px;
+        }
+        &-2 {
+          i {
+            font-size: 25px !important;
+          }
+        }
       }
     }
     .hero-image {
       img {
-        width: 80%;
+        width: 75% !important;
       }
     }
   }
@@ -106,7 +121,7 @@
     .about {
       .about-text {
         p {
-          margin: 1.3rem 0 3rem;
+          margin: 1.3rem 0 0.7rem;
         }
       }
       &-image {

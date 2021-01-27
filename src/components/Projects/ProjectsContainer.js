@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import project1 from "../../images/projects/Github Profiler.png";
-import project3 from "../../images/projects/Hotel Resort.png";
-import project4 from "../../images/projects/Portfolio v3.png";
-import project2 from "../../images/projects/Covid Tracker.png";
+import githubProfiler from "../../images/projects/Github Profiler.png";
+import hotelResort from "../../images/projects/Hotel Resort.png";
+import portfolioV4 from "../../images/projects/Portfolio v4.png";
+import covidTracker from "../../images/projects/Covid Tracker.png";
+import githubJobs from "../../images/projects/Github Jobs.png";
+import laslesVpn from "../../images/projects/Lasles VPN.png";
 import ProjectsItems from "./ProjectsItems";
 
 const ProjectsContainer = () => {
@@ -12,63 +14,63 @@ const ProjectsContainer = () => {
   const projects = [
     {
       id: 1,
-      image: project1,
-      github: "/",
-      preview: "/",
-      title: "Web Design",
+      image: githubProfiler,
+      github: "https://github.com/dimasabimanyy/react-github-profile",
+      preview: "https://profilergithub.netlify.app/login",
+      title: "Github Profile",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "A nicer look at your GitHub profile and repository stats with data visualizations of your top languages and stars. Sort through your top repos by number of stars and forks.",
+      stack: ["React js", "Fusion Charts", "Github API", "Styled Components"],
     },
     {
       id: 2,
-      image: project2,
-      github: "/",
-      preview: "/",
-      title: "Web Development",
+      image: covidTracker,
+      github: "https://github.com/dimasabimanyy/covid-19-tracker",
+      preview: "https://globecovidtracker.netlify.app/",
+      title: "Covid 19 Tracker",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "A website that provides information about covid 19 cases around the world. The data sourced from disease.sh api and displayed in chart form with chart.js.",
+      stack: ["React js", "Chart js", "Disease API"],
     },
     {
       id: 3,
-      image: project3,
-      github: "/",
-      preview: "/",
-      title: "Wordpress Development",
+      image: hotelResort,
+      github: "https://github.com/dimasabimanyy/hotel-reservation",
+      preview: "https://erios-hotel-f25ec.web.app/",
+      title: "Hotel Reservation",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "A website for booking hotel rooms online and by telephone. Built with React js and Contentful headless CMS to store the data. I also use styled component to style the front end.",
+      stack: ["HTML & CSS", "React js", "Contentful CMS"],
     },
     {
       id: 4,
-      image: project4,
+      image: laslesVpn,
       github: "/",
       preview: "/",
-      title: "Wordpress Development",
+      title: "Lasles VPN",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
       stack: ["react", "vue", "materialize"],
     },
     {
       id: 5,
-      image: project4,
+      image: githubJobs,
       github: "/",
       preview: "/",
-      title: "Wordpress Development",
+      title: "Github Jobs Finder",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "A nicer look to find a job from github. A website that works with the GitHub Jobs API that includes search, filter, pagination, etc.",
+      stack: ["React js", "Github API"],
     },
     {
       id: 6,
-      image: project4,
-      github: "/",
-      preview: "/",
-      title: "Wordpress Development",
+      image: portfolioV4,
+      github: "https://github.com/dimasabimanyy/v4",
+      preview: "https://dimasabimanyuv4.netlify.app/",
+      title: "Portfolio v4",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "Forth iteration of my personal portfolio website. Built with Gatsby and Strapi Headless CMS.",
+      stack: ["Gatsby", "Strapi", "S(CSS)"],
     },
   ];
 

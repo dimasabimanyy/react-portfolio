@@ -12,20 +12,20 @@ import Footer from "./components/Footer/Footer";
 import Loading from "./components/Loading";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loadTime, setLoadTime] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+      setLoadTime(false);
+    }, 3000);
   }, []);
 
   return (
     <div className="App">
-      {loading ? (
-        <Loading />
+      {loadTime ? (
+        <Loading loading={loadTime} />
       ) : (
-        <>
+        <div className="main-content">
           <header>
             <Navigation />
             <Hero />
@@ -37,7 +37,7 @@ function App() {
           <Youtube />
           <ContactContainer />
           <Footer />
-        </>
+        </div>
       )}
     </div>
   );

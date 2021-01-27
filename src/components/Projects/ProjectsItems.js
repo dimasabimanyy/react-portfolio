@@ -27,10 +27,10 @@ const ProjectsItems = ({
         </div>
         <p>{description}</p>
         <div className="project-info-links">
-          <a href={github} alt={title}>
+          <a href={github} alt={title} target="_blank" rel="noreferrer">
             <i className="fab fa-github"></i>
           </a>
-          <a href={preview} alt={title}>
+          <a href={preview} alt={title} target="_blank" rel="noreferrer">
             <i className="fas fa-external-link-alt"></i>
           </a>
         </div>

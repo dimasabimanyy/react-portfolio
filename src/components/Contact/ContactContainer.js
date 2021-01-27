@@ -18,20 +18,45 @@ const ContactContainer = () => {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            <a href="" alt="">
+            <a
+              href="https://twitter.com/dimasabimanyy"
+              alt="Twitter"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-twitter"></i>
             </a>
-            <a href="" alt="">
+            <a
+              href="https://github.com/dimasabimanyy"
+              alt="Github"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="" alt="">
+            <a
+              href="https://www.instagram.com/dimasabimanyy_/"
+              alt="Instagram"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="" alt="">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="" alt="">
+            <a
+              href="https://codepen.io/dimasabimanyu"
+              alt="Codepen"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i className="fab fa-codepen"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dimasabimanyu/"
+              alt="Linked In"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>

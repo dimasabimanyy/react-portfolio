@@ -309,28 +309,29 @@ header {
         color: $dark;
         font-weight: 700;
       }
-      p {
+      &-desc {
+        margin: 2rem 0 1rem;
+        p {
+          color: $gray-dark;
+          margin-bottom: 1rem;
+        }
+      }
+      &-skill {
         color: $gray-dark;
-        margin: 2rem 0 7.5rem;
-      }
-      a {
-        color: $dark;
-        font-size: 1rem;
-        width: fit-content;
-        position: relative;
-      }
-      a:after {
-        content: "";
-        width: 100%;
-        height: 1.5px;
-        background: #1b1b1bd5;
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        transition: 0.2s;
-      }
-      a:hover:after {
-        bottom: 0;
+        list-style-position: inside;
+        display: flex;
+        .list-1 {
+          margin-right: 3rem;
+        }
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 0.8rem;
+            i {
+              margin-right: 0.9rem;
+            }
+          }
+        }
       }
     }
     .about-image {

@@ -5,23 +5,23 @@ const ServicesContainer = () => {
   const services = [
     {
       id: 1,
-      title: "Web Design",
+      title: "PSD to HTML",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+        "Do you have a nice design in figma, photoshop or adobe XD ? Contact me and I'll convert them into fully responsive, nice looking websites!",
       aosDelay: 400,
     },
     {
       id: 2,
       title: "Web Development",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+        "Want to turn your idea into the next big thing? I design and develop with your business in mind, putting you in control of your content.",
       aosDelay: 600,
     },
     {
       id: 3,
       title: "Wordpress Development",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+        "Specialists in CMS web development using Wordpress. Millions of website today are built on top of Wordpress, yours can become the next one!",
       aosDelay: 800,
     },
   ];

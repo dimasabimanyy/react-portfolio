@@ -1,8 +1,10 @@
 import React from "react";
 
-const Loading = () => {
+const Loading = ({ loading }) => {
   return (
-    <>
+    <section
+      className={`loading-wrapper ${loading ? "loading-on" : "loading-off"}`}
+    >
       <div className="loading">
         <div class="loading">
           <div class="finger finger-1">
@@ -36,7 +38,7 @@ const Loading = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

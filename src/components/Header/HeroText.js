@@ -20,15 +20,32 @@ const HeroText = () => {
         <a href="/" className="btn btn-purple btn-cv">
           <i class="fas fa-download"></i> Download CV
         </a>
-        <a href="" className="hero-social">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="" className="hero-social">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="" className="hero-social">
-          <i class="fab fa-codepen"></i>
-        </a>
+        <div className="hero-text-links-2">
+          <a
+            href="https://www.youtube.com/channel/UC9RHCbCEj0UxDhj0y__MIRA"
+            className="hero-social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            href="https://github.com/dimasabimanyy"
+            className="hero-social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://codepen.io/dimasabimanyu"
+            className="hero-social"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
       </div>
     </div>
   );

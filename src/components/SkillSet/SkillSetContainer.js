@@ -25,28 +25,28 @@ const SkillSetContainer = () => {
     {
       id: 1,
       icon: image1,
-      title: "Product Design",
+      title: "Web development",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
     },
     {
       id: 2,
       icon: image2,
-      title: "Visual Design",
+      title: "Search Engine Optimization",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
     },
     {
       id: 3,
       icon: image3,
-      title: "Motion Design",
+      title: "Web Design",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
     },
     {
       id: 4,
       icon: image4,
-      title: "Photography",
+      title: "Modern and Mobile Ready",
       description:
         "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
     },
