@@ -1,7 +1,8 @@
 import React from "react";
 import youtubeImg from "../../images/youtube.png";
+import playIt from "../../images/play-it.png";
 
-const Youtube = () => {
+const Youtube = ({ openModal }) => {
   return (
     <div id="youtube">
       <div className="youtube container">
@@ -33,6 +34,14 @@ const Youtube = () => {
           data-aos-duration="600"
         >
           <img src={youtubeImg} alt="Night Coder Channel" />
+          <div className="play-button" onClick={openModal}>
+            <img
+              src={playIt}
+              alt="Play Button"
+              className="play-it"
+              onClick={openModal}
+            />
+          </div>
         </div>
       </div>
     </div>

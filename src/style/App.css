@@ -1406,10 +1406,85 @@ header:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 #youtube .youtube-image img {
   width: 100%;
+}
+
+#youtube .youtube-image .play-button {
+  width: 100px;
+  height: 100px;
+  background: #000000;
+  position: absolute;
+  z-index: 999;
+  left: 40%;
+  top: 40%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#youtube .youtube-image .play-button .play-it {
+  width: 35px;
+  height: 35px;
+}
+
+#youtube .youtube-image .play-button:hover {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.youtube-video {
+  width: 100vw;
+  height: 100vh;
+  margin: auto auto;
+  position: fixed;
+  z-index: 99999 !important;
+  background: #000000a2;
+  transition: 0.3s ease;
+}
+
+.youtube-video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: coral;
+}
+
+.youtube-video-wrap .close-modal {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  background: maroon;
+}
+
+.youtube-video-wrap .close-modal div {
+  width: 100px;
+  height: 4px;
+  background: #fff;
+  margin: 5px 0;
+}
+
+.youtube-video-wrap .close-modal div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.youtube-video-wrap .close-modal div:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.youtube-video-wrap .youtube-box {
+  width: 75%;
+  height: 75%;
+  background: aqua;
 }
 
 /* === CONTACT === */

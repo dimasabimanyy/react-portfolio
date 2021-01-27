@@ -13,9 +13,15 @@ const AboutText = () => {
           to gaining proficiency in all intricacies of web development in order
           to better myself as a developer and problem solver.
         </p>
-        <p>Here are a few technologies I've been working with recently :</p>
+        <p data-aos="fade-up-right" data-aos-duration="600">
+          Here are a few technologies I've been working with recently :
+        </p>
       </div>
-      <div className="about-text-skill">
+      <div
+        className="about-text-skill"
+        data-aos="fade-up-right"
+        data-aos-duration="600"
+      >
         <ul className="list-1">
           <li>
             <i class="fas fa-angle-right"></i> React js

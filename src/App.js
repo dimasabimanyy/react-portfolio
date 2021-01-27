@@ -10,9 +10,11 @@ import Youtube from "./components/Youtube/Youtube";
 import ContactContainer from "./components/Contact/ContactContainer";
 import Footer from "./components/Footer/Footer";
 import Loading from "./components/Loading";
+import YoutubeModal from "./components/Youtube/YoutubeModal";
 
 function App() {
   const [loadTime, setLoadTime] = useState(true);
+  const [ytModal, setYtModal] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,12 +22,25 @@ function App() {
     }, 2500);
   }, []);
 
+  function toggleYtModal() {
+    if (ytModal === false) {
+      setYtModal(true);
+    } else {
+      setYtModal(false);
+    }
+  }
+
   return (
     <div className="App">
       {loadTime ? (
         <Loading loading={loadTime} />
       ) : (
         <div className="main-content">
+          {ytModal === true ? (
+            <YoutubeModal closeModal={toggleYtModal} />
+          ) : (
+            <></>
+          )}
           <header>
             <Navigation />
             <Hero />
@@ -34,7 +49,7 @@ function App() {
           <AboutContainer />
           <SkillSetContainer />
           <ProjectsContainer />
-          <Youtube />
+          <Youtube openModal={toggleYtModal} modal={ytModal} />
           <ContactContainer />
           <Footer />
         </div>
