@@ -179,51 +179,51 @@ button.rec-dot {
 }
 
 .loading .finger-1 {
-  animation: finger-1-animation 2s infinite ease-out;
+  animation: finger-1-animation 1.5s infinite ease-out;
 }
 
 .loading .finger-1 span {
-  animation: finger-1-animation-span 2s infinite ease-out;
+  animation: finger-1-animation-span 1.5s infinite ease-out;
 }
 
 .loading .finger-1 i {
-  animation: finger-1-animation-i 2s infinite ease-out;
+  animation: finger-1-animation-i 1.5s infinite ease-out;
 }
 
 .loading .finger-2 {
-  animation: finger-2-animation 2s infinite ease-out;
+  animation: finger-2-animation 1.5s infinite ease-out;
 }
 
 .loading .finger-2 span {
-  animation: finger-2-animation-span 2s infinite ease-out;
+  animation: finger-2-animation-span 1.5s infinite ease-out;
 }
 
 .loading .finger-2 i {
-  animation: finger-2-animation-i 2s infinite ease-out;
+  animation: finger-2-animation-i 1.5s infinite ease-out;
 }
 
 .loading .finger-3 {
-  animation: finger-3-animation 2s infinite ease-out;
+  animation: finger-3-animation 1.5s infinite ease-out;
 }
 
 .loading .finger-3 span {
-  animation: finger-3-animation-span 2s infinite ease-out;
+  animation: finger-3-animation-span 1.5s infinite ease-out;
 }
 
 .loading .finger-3 i {
-  animation: finger-3-animation-i 2s infinite ease-out;
+  animation: finger-3-animation-i 1.5s infinite ease-out;
 }
 
 .loading .finger-4 {
-  animation: finger-4-animation 2s infinite ease-out;
+  animation: finger-4-animation 1.5s infinite ease-out;
 }
 
 .loading .finger-4 span {
-  animation: finger-4-animation-span 2s infinite ease-out;
+  animation: finger-4-animation-span 1.5s infinite ease-out;
 }
 
 .loading .finger-4 i {
-  animation: finger-4-animation-i 2s infinite ease-out;
+  animation: finger-4-animation-i 1.5s infinite ease-out;
 }
 
 .loading .finger-item {

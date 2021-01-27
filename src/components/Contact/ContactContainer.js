@@ -10,8 +10,8 @@ const ContactContainer = () => {
             Let's get started
           </h1>
           <p data-aos="fade-up" data-aos-duration="600">
-            Now that you know a lot about me, let me know if you are interested
-            to work with me.
+            Whether you have a question or just want to say hi, I'll try my best
+            to get back to you!
           </p>
           <div
             className="contact-heading-icons"

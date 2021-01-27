@@ -49,8 +49,8 @@ const ProjectsContainer = () => {
       preview: "/",
       title: "Lasles VPN",
       description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-      stack: ["react", "vue", "materialize"],
+        "Simple landing page built with classic HTML, S(CSS) & Javascript.",
+      stack: ["HTML & S(CSS)", "Javascript"],
     },
     {
       id: 5,

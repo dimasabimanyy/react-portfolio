@@ -10,11 +10,21 @@ const Youtube = () => {
             Youtube
           </h1>
           <p data-aos="fade-up-right" data-aos-duration="600">
-            Each dribbble shot is made with love and care. Do check out my work
-            on Dribbble. Likes and comments are appreciated.
+            Recently, i start to create videos around programming (especially
+            web developement) where i build small to intermediate projects and
+            posted it on youtube. Apart from the desire to help others learn
+            about the web, I found the benefit of learning by teaching others is
+            extremely effective. Especially to sharpen our understanding.
           </p>
-          <a href="/" alt="" data-aos="fade-up-right" data-aos-duration="600">
-            Follow me on Youtube
+          <a
+            href="https://www.youtube.com/channel/UC9RHCbCEj0UxDhj0y__MIRA"
+            alt="Youtube Channel"
+            data-aos="fade-up-right"
+            data-aos-duration="600"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Check out my channel
           </a>
         </div>
         <div
