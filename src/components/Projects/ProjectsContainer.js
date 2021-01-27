@@ -45,8 +45,8 @@ const ProjectsContainer = () => {
     {
       id: 4,
       image: laslesVpn,
-      github: "/",
-      preview: "/",
+      github: "https://github.com/dimasabimanyy/lasles-vpn-landing-page",
+      preview: "https://lasleslite.netlify.app",
       title: "Lasles VPN",
       description:
         "Simple landing page built with classic HTML, S(CSS) & Javascript.",
@@ -55,8 +55,8 @@ const ProjectsContainer = () => {
     {
       id: 5,
       image: githubJobs,
-      github: "/",
-      preview: "/",
+      github: "https://github.com/dimasabimanyy/github-jobs",
+      preview: "https://githubboard.netlify.app/",
       title: "Github Jobs Finder",
       description:
         "A nicer look to find a job from github. A website that works with the GitHub Jobs API that includes search, filter, pagination, etc.",
