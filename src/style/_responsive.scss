@@ -60,6 +60,13 @@
     }
   }
 
+  .youtube-video {
+    .youtube-box {
+      width: 80%;
+      height: 50%;
+    }
+  }
+
   #contact {
     .contact {
       &-heading {
@@ -164,6 +171,32 @@
           }
         }
       }
+    }
+  }
+
+  #youtube {
+    .youtube {
+      &-image {
+        .play-button {
+          width: 70px;
+          height: 70px;
+          .play-it {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .youtube-video {
+    .close-modal {
+      right: 30px;
+      top: 30px;
+    }
+    .youtube-box {
+      width: 90%;
+      height: 40%;
     }
   }
 

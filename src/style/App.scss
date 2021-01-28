@@ -551,7 +551,6 @@ header {
   margin: auto auto;
   position: fixed;
   z-index: 99999 !important;
-  background: #000000a2;
   transition: 0.3s ease;
   &-wrap {
     display: flex;
@@ -560,7 +559,7 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #000000c7;
+    background: #000000de;
     .close-modal {
       position: absolute;
       right: 80px;
