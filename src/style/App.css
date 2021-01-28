@@ -1456,35 +1456,39 @@ header:after {
   position: relative;
   width: 100%;
   height: 100%;
-  background: coral;
+  background: #000000c7;
 }
 
 .youtube-video-wrap .close-modal {
   position: absolute;
-  right: 50px;
-  top: 30px;
-  background: maroon;
+  right: 80px;
+  top: 50px;
+  cursor: pointer;
 }
 
 .youtube-video-wrap .close-modal div {
-  width: 100px;
-  height: 4px;
+  width: 50px;
+  height: 3px;
   background: #fff;
   margin: 5px 0;
+  cursor: pointer;
 }
 
 .youtube-video-wrap .close-modal div:nth-child(1) {
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateY(8px) translateX(3px);
 }
 
 .youtube-video-wrap .close-modal div:nth-child(2) {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-4px) translateX(-3px);
 }
 
 .youtube-video-wrap .youtube-box {
   width: 75%;
   height: 75%;
-  background: aqua;
+}
+
+.youtube-video-wrap .youtube-box iframe {
+  border: none;
 }
 
 /* === CONTACT === */

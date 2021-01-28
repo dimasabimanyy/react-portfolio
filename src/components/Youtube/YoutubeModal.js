@@ -8,7 +8,14 @@ const YoutubeModal = ({ closeModal }) => {
           <div></div>
           <div></div>
         </div>
-        <div className="youtube-box"></div>
+        <div className="youtube-box">
+          <iframe
+            title="my youtube channel"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/6Ym4XpQ82iQ?autoplay=0"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
