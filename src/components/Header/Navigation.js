@@ -42,7 +42,7 @@ const Navigation = () => {
               data-aos-duration="600"
               data-aos-delay="400"
             >
-              <a href="#study-cases">Study Cases</a>
+              <a href="#projects">Study Cases</a>
             </li>
             <li
               className="nav-contact"
@@ -50,7 +50,7 @@ const Navigation = () => {
               data-aos-duration="600"
               data-aos-delay="500"
             >
-              <a href="contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
