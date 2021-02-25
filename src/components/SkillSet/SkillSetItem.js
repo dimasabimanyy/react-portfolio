@@ -5,7 +5,7 @@ const SkillSetItem = ({ icon, title, description, aosDelay }) => {
     <div className="skillSet-item" data-aos="fade-up" data-aos-duration="600">
       <img src={icon} alt={title} />
       <h4>{title}</h4>
-      <p>{description}</p>
+      {/* <p>{description}</p> */}
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 import SkillSetItem from "./SkillSetItem";
-import image1 from "../../images/skill-1.svg";
-import image2 from "../../images/skill-2.svg";
-import image3 from "../../images/skill-3.svg";
-import image4 from "../../images/skill-4.svg";
+import image1 from "../../images/Web.svg";
+import image2 from "../../images/Search.svg";
+import image3 from "../../images/Design.svg";
+import image4 from "../../images/Phone.svg";
 import html from "../../images/html.png";
 import css from "../../images/css.png";
 import scss from "../../images/scss.jpg";
@@ -70,7 +70,7 @@ const SkillSetContainer = () => {
   ];
   return (
     <div id="skillSet">
-      <div className="skillSet container">
+      {/* <div className="skillSet container">
         <div
           className="skillSet-heading"
           data-aos="fade-up"
@@ -94,7 +94,7 @@ const SkillSetContainer = () => {
             />
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="skillSet-bottom">
         <SkillSetSlider tech={myTech} />
       </div>

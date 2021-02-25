@@ -47,8 +47,8 @@ function App() {
           </header>
           <ServicesContainer />
           <AboutContainer />
-          <SkillSetContainer />
           <ProjectsContainer />
+          <SkillSetContainer />
           <Youtube openModal={toggleYtModal} modal={ytModal} />
           <ContactContainer />
           <Footer />
