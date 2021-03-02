@@ -1,9 +1,9 @@
 import React from "react";
-import SkillSetItem from "./SkillSetItem";
-import image1 from "../../images/Web.svg";
-import image2 from "../../images/Search.svg";
-import image3 from "../../images/Design.svg";
-import image4 from "../../images/Phone.svg";
+// import SkillSetItem from "./SkillSetItem";
+// import image1 from "../../images/Web.svg";
+// import image2 from "../../images/Search.svg";
+// import image3 from "../../images/Design.svg";
+// import image4 from "../../images/Phone.svg";
 import html from "../../images/html.png";
 import css from "../../images/css.png";
 import scss from "../../images/scss.jpg";
@@ -21,36 +21,36 @@ import github from "../../images/github.png";
 import SkillSetSlider from "./SkillSetSlider";
 
 const SkillSetContainer = () => {
-  const skills = [
-    {
-      id: 1,
-      icon: image1,
-      title: "Web development",
-      description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-    },
-    {
-      id: 2,
-      icon: image2,
-      title: "Search Engine Optimization",
-      description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-    },
-    {
-      id: 3,
-      icon: image3,
-      title: "Web Design",
-      description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-    },
-    {
-      id: 4,
-      icon: image4,
-      title: "Modern and Mobile Ready",
-      description:
-        "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
-    },
-  ];
+  // const skills = [
+  //   {
+  //     id: 1,
+  //     icon: image1,
+  //     title: "Web development",
+  //     description:
+  //       "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+  //   },
+  //   {
+  //     id: 2,
+  //     icon: image2,
+  //     title: "Search Engine Optimization",
+  //     description:
+  //       "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+  //   },
+  //   {
+  //     id: 3,
+  //     icon: image3,
+  //     title: "Web Design",
+  //     description:
+  //       "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+  //   },
+  //   {
+  //     id: 4,
+  //     icon: image4,
+  //     title: "Modern and Mobile Ready",
+  //     description:
+  //       "There are many variations of passages of Lorem Ipsum available, but the majority have good.",
+  //   },
+  // ];
 
   const myTech = [
     { icon: html, aosDelay: "300" },
