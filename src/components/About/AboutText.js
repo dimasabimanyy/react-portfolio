@@ -41,13 +41,13 @@ const AboutText = () => {
             <i class="fas fa-angle-right"></i> Vue js
           </li>
           <li>
-            <i class="fas fa-angle-right"></i> Laravel
+            <i class="fas fa-angle-right"></i> Node js (Express)
           </li>
           <li>
             <i class="fas fa-angle-right"></i> Wordpress
           </li>
           <li>
-            <i class="fas fa-angle-right"></i> MySql
+            <i class="fas fa-angle-right"></i> Laravel
           </li>
         </ul>
       </div>
