@@ -17,7 +17,10 @@ const HeroText = () => {
         everything in between.
       </p>
       <div className="hero-text-links">
-        <a href="/" className="btn btn-purple btn-cv">
+        <a
+          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          className="btn btn-purple btn-cv"
+        >
           <i class="fas fa-download"></i> Download CV
         </a>
         <div className="hero-text-links-2">
