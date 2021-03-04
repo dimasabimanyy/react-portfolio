@@ -18,7 +18,9 @@ const Navigation = () => {
           data-aos-duration="500"
           data-aos-delay="150"
         >
-          <img src={logo} alt="Dimas Abimanyu" />
+          <a href="/" alt="logo">
+            <img src={logo} alt="Dimas Abimanyu" />
+          </a>
         </div>
 
         <div className={toggle ? "main-nav active" : "main-nav"}>
