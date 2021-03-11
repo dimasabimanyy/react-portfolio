@@ -4,7 +4,7 @@ import HeroImage from "./HeroImage";
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" class="hero">
       <div className="hero-wrapper container">
         <HeroText />
         <HeroImage />

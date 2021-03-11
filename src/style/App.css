@@ -862,7 +862,6 @@ button.rec-dot {
 /* === HEADER ==== */
 header {
   width: 100%;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -916,14 +915,6 @@ header:after {
   cursor: pointer;
 }
 
-.nav-wrapper #hamburger .line {
-  cursor: pointer;
-  width: 2.5rem;
-  height: 3px;
-  margin: 5px 0;
-  background: #ffffff;
-}
-
 @media screen and (max-width: 900px) {
   .nav {
     padding: 1.5rem 0;
@@ -933,8 +924,8 @@ header:after {
   }
   .nav .nav-wrapper #hamburger {
     display: block;
-    width: 43px;
-    height: 35px;
+    width: 40px;
+    height: 25px;
     position: relative;
     transform: rotate(0deg);
     transition: 0.5s ease-in-out;
@@ -943,7 +934,7 @@ header:after {
   .nav .nav-wrapper #hamburger span {
     display: block;
     position: absolute;
-    height: 3px;
+    height: 2.5px;
     width: 100%;
     background: #ffffff;
     opacity: 1;
@@ -955,10 +946,10 @@ header:after {
     top: 0px;
   }
   .nav .nav-wrapper #hamburger span:nth-child(2) {
-    top: 12px;
+    top: 11px;
   }
   .nav .nav-wrapper #hamburger span:nth-child(3) {
-    top: 24px;
+    top: 22px;
   }
   .nav .nav-wrapper #hamburger.open span:nth-child(1) {
     top: 12px;
@@ -1008,7 +999,7 @@ header:after {
     padding: 0;
   }
   .nav .nav-wrapper .main-nav ul li a {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     display: inline-block;
     transform: translateY(100%);
   }
@@ -1019,8 +1010,9 @@ header:after {
   .nav .nav-wrapper .main-nav ul .nav-contact a {
     border: 2px solid #5221e6;
     background: #5221e6;
-    padding: 1rem 2rem;
+    padding: 0.7rem 1.2rem;
     transition: 0.2s ease-in;
+    border-radius: 3px;
   }
   .nav .nav-wrapper .main-nav ul .nav-contact a:hover {
     background: transparent;
@@ -1058,55 +1050,68 @@ header:after {
 }
 
 /* === HERO === */
-.hero-wrapper {
+.hero {
+  padding: 7rem 0;
+}
+
+.hero .hero-wrapper {
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: center;
-  min-height: 80vh;
 }
 
-.hero-wrapper .hero-text h1 {
+.hero .hero-wrapper .hero-text {
+  padding-bottom: 2.5rem;
+}
+
+.hero .hero-wrapper .hero-text h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.5rem;
   margin-bottom: 1.5rem;
 }
 
-.hero-wrapper .hero-text h1 span {
+.hero .hero-wrapper .hero-text h1 span {
   color: #8491a0;
 }
 
-.hero-wrapper .hero-text-links {
+.hero .hero-wrapper .hero-text-links {
   margin-top: 3rem;
   display: flex;
   align-items: center;
 }
 
-.hero-wrapper .hero-text-links .btn-cv {
+.hero .hero-wrapper .hero-text-links .btn-cv {
   font-size: 0.9rem;
   margin-right: 2rem;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.hero-wrapper .hero-text-links .btn-cv i {
+.hero .hero-wrapper .hero-text-links .btn-cv i {
   margin-right: 0.5rem;
 }
 
-.hero-wrapper .hero-text-links .hero-social {
+.hero .hero-wrapper .hero-text-links .hero-social {
   margin: 0 1rem;
 }
 
-.hero-wrapper .hero-text-links .hero-social i {
+.hero .hero-wrapper .hero-text-links .hero-social i {
   font-size: 1.5rem;
   color: #8491a0;
   transition: 0.3s ease-in;
 }
 
-.hero-wrapper .hero-text-links .hero-social i:hover {
+.hero .hero-wrapper .hero-text-links .hero-social i:hover {
   color: #ffffff;
 }
 
-.hero-wrapper .hero-image img {
+.hero .hero-wrapper .hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero-wrapper .hero-image img {
   width: 100%;
 }
 
@@ -1360,7 +1365,7 @@ header:after {
 
 #youtube .youtube {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -1583,21 +1588,24 @@ footer a i {
 }
 
 @media all and (max-width: 900px) {
-  .hero-wrapper {
+  .hero {
+    padding: 1.5rem 0 !important;
+  }
+  .hero .hero-wrapper {
     grid-template-columns: 1fr;
   }
-  .hero-wrapper .hero-text {
+  .hero .hero-wrapper .hero-text {
     order: 2;
   }
-  .hero-wrapper .hero-text h1 {
+  .hero .hero-wrapper .hero-text h1 {
     font-size: 2.2rem;
     line-height: 3rem;
     margin-bottom: 0.5rem;
   }
-  .hero-wrapper .hero-image {
+  .hero .hero-wrapper .hero-image {
     text-align: center;
   }
-  .hero-wrapper .hero-image img {
+  .hero .hero-wrapper .hero-image img {
     width: 65%;
   }
   #services {
@@ -1637,28 +1645,36 @@ footer a i {
   }
 }
 
+@media all and (max-width: 768px) {
+  #youtube .youtube {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media all and (max-width: 680px) {
-  .hero-wrapper {
-    min-height: 75vh;
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+  .hero .hero-wrapper {
     text-align: center;
   }
-  .hero-wrapper .hero-text h1 {
+  .hero .hero-wrapper .hero-text h1 {
     font-size: 1.4rem;
     line-height: 1.9rem;
   }
-  .hero-wrapper .hero-text-links {
+  .hero .hero-wrapper .hero-text-links {
     margin-top: 2rem;
     flex-direction: column;
-    gap: 2rem;
   }
-  .hero-wrapper .hero-text-links .btn-cv {
+  .hero .hero-wrapper .hero-text-links .btn-cv {
     margin-right: 1rem;
     padding: 10px 15px;
+    margin-bottom: 1.5rem;
   }
-  .hero-wrapper .hero-text-links-2 i {
+  .hero .hero-wrapper .hero-text-links-2 i {
     font-size: 25px !important;
   }
-  .hero-wrapper .hero-image img {
+  .hero .hero-wrapper .hero-image img {
     width: 75% !important;
   }
   #services .services-items h1 {
