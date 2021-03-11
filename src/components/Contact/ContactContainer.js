@@ -35,7 +35,7 @@ const ContactContainer = () => {
               <i className="fab fa-github"></i>
             </a>
             <a
-              href="https://www.instagram.com/dimasabimanyy_/"
+              href="https://www.instagram.com/dimasabimany_/"
               alt="Instagram"
               target="_blank"
               rel="noreferrer"
