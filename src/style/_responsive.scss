@@ -72,10 +72,14 @@
 
   #contact {
     .contact {
+      grid-template-columns: 1fr;
       &-heading {
         text-align: center;
         &-icons {
           justify-content: center;
+          a i {
+            margin: 0 1rem;
+          }
         }
       }
     }

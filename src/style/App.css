@@ -1503,7 +1503,7 @@ header:after {
 
 #contact .contact {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
 
@@ -1514,11 +1514,11 @@ header:after {
 
 #contact .contact-heading-icons {
   display: flex;
-  gap: 2rem;
   margin-top: 1rem;
 }
 
 #contact .contact-heading-icons a i {
+  margin-right: 2rem;
   color: #ffffff;
   font-size: 1.9rem;
 }
@@ -1637,11 +1637,17 @@ footer a i {
     width: 80%;
     height: 50%;
   }
+  #contact .contact {
+    grid-template-columns: 1fr;
+  }
   #contact .contact-heading {
     text-align: center;
   }
   #contact .contact-heading-icons {
     justify-content: center;
+  }
+  #contact .contact-heading-icons a i {
+    margin: 0 1rem;
   }
 }
 

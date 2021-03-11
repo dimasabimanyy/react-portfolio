@@ -603,7 +603,8 @@ header {
   padding: 4rem 0;
   .contact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
     &-heading {
       h1 {
@@ -612,9 +613,9 @@ header {
       }
       &-icons {
         display: flex;
-        gap: 2rem;
         margin-top: 1rem;
         a i {
+          margin-right: 2rem;
           color: $light;
           font-size: 1.9rem;
           &:hover {
