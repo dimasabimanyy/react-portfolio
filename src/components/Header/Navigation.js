@@ -6,7 +6,6 @@ const Navigation = () => {
 
   const toggleNav = () => {
     toggle ? setToggle(false) : setToggle(true);
-    console.log(toggle);
   };
 
   return (
