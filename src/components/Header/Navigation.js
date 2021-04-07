@@ -27,13 +27,6 @@ const Navigation = () => {
             <li
               data-aos="fade-down"
               data-aos-duration="600"
-              data-aos-delay="200"
-            >
-              <a href="#about">About</a>
-            </li>
-            <li
-              data-aos="fade-down"
-              data-aos-duration="600"
               data-aos-delay="300"
             >
               <a href="#services">Services</a>
@@ -41,15 +34,30 @@ const Navigation = () => {
             <li
               data-aos="fade-down"
               data-aos-duration="600"
+              data-aos-delay="200"
+            >
+              <a href="#about">About</a>
+            </li>
+
+            <li
+              data-aos="fade-down"
+              data-aos-duration="600"
               data-aos-delay="400"
             >
-              <a href="#projects">Study Cases</a>
+              <a href="#projects">Portfolio</a>
+            </li>
+            <li
+              data-aos="fade-down"
+              data-aos-duration="600"
+              data-aos-delay="500"
+            >
+              <a href="#youtube">Youtube</a>
             </li>
             <li
               className="nav-contact"
               data-aos="fade-down"
               data-aos-duration="600"
-              data-aos-delay="500"
+              data-aos-delay="600"
             >
               <a href="#contact">Contact</a>
             </li>

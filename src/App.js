@@ -36,11 +36,6 @@ function App() {
         <Loading loading={loadTime} />
       ) : (
         <div className="main-content">
-          {ytModal === true ? (
-            <YoutubeModal closeModal={toggleYtModal} />
-          ) : (
-            <></>
-          )}
           <header>
             <Navigation />
             <Hero />
@@ -50,6 +45,11 @@ function App() {
           <ProjectsContainer />
           <SkillSetContainer />
           <Youtube openModal={toggleYtModal} modal={ytModal} />
+          {ytModal === true ? (
+            <YoutubeModal closeModal={toggleYtModal} />
+          ) : (
+            <></>
+          )}
           <ContactContainer />
           <Footer />
         </div>
