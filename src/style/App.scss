@@ -305,7 +305,7 @@ header {
   padding: 9rem 0;
   .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     .about-text {
       display: flex;

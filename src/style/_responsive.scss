@@ -87,6 +87,12 @@
 }
 
 @media all and (max-width: 768px) {
+  #about {
+    .about {
+      grid-template-columns: 1fr;
+    }
+  }
+
   #youtube {
     .youtube {
       grid-template-columns: 1fr;
