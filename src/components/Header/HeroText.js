@@ -41,12 +41,12 @@ const HeroText = () => {
             <i class="fab fa-github"></i>
           </a>
           <a
-            href="https://codepen.io/dimasabimanyu"
+            href="https://www.linkedin.com/in/dimasabimanyu/"
             className="hero-social"
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-codepen"></i>
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </div>
       </div>
