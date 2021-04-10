@@ -18,7 +18,7 @@ const HeroText = () => {
       </p>
       <div className="hero-text-links">
         <a
-          href={process.env.PUBLIC_URL + "/resume.pdf"}
+          href={process.env.PUBLIC_URL + "/Resume - Dimas Abimanyu.pdf"}
           className="btn btn-purple btn-cv"
         >
           <i class="fas fa-download"></i> Download CV
