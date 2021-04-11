@@ -8,7 +8,7 @@ const AboutText = () => {
       </h1>
       <div className="about-text-desc">
         <p data-aos="fade-up-right" data-aos-duration="600">
-          Over the past 5 years, coding has developed into a passion of mine,
+          Over the past 6 years, coding has developed into a passion of mine,
           specifically, in the realm of web development. I've dedicated my time
           to gaining proficiency in all intricacies of web development in order
           to better myself as a developer and problem solver.
