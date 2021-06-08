@@ -27,14 +27,14 @@ const Navigation = () => {
             <li
               data-aos="fade-down"
               data-aos-duration="600"
-              data-aos-delay="300"
+              data-aos-delay="200"
             >
               <a href="#services">Services</a>
             </li>
             <li
               data-aos="fade-down"
               data-aos-duration="600"
-              data-aos-delay="200"
+              data-aos-delay="300"
             >
               <a href="#about">About</a>
             </li>
