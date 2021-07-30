@@ -13,7 +13,7 @@ const YoutubeModal = ({ closeModal }) => {
             title="my youtube channel"
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/fqhAMkSV-bI?autoplay=0"
+            src="https://www.youtube.com/embed/T5-vgyEbtPU"
           ></iframe>
         </div>
       </div>

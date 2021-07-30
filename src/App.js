@@ -14,7 +14,7 @@ import YoutubeModal from "./components/Youtube/YoutubeModal";
 
 function App() {
   const [loadTime, setLoadTime] = useState(true);
-  const [ytModal, setYtModal] = useState(false);
+  const [ytModal, setYtModal] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,10 +23,12 @@ function App() {
   }, []);
 
   function toggleYtModal() {
-    if (ytModal === false) {
-      setYtModal(true);
-    } else {
+    if (ytModal) {
       setYtModal(false);
+      document.body.classList.remove("hide-scroll");
+    } else {
+      setYtModal(true);
+      document.body.classList.add("hide-scroll");
     }
   }
 
@@ -45,11 +47,7 @@ function App() {
           <ProjectsContainer />
           <SkillSetContainer />
           <Youtube openModal={toggleYtModal} modal={ytModal} />
-          {ytModal === true ? (
-            <YoutubeModal closeModal={toggleYtModal} />
-          ) : (
-            <></>
-          )}
+          {ytModal ? <YoutubeModal closeModal={toggleYtModal} /> : <></>}
           <ContactContainer />
           <Footer />
         </div>

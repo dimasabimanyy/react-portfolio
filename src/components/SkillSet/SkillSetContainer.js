@@ -13,7 +13,7 @@ import react from "../../images/react.png";
 import laravel from "../../images/laravel.png";
 import gatsby from "../../images/gatsby.png";
 import php from "../../images/php-icon.svg";
-import wordpress from "../../images/wordpress-icon.png";  
+import wordpress from "../../images/wordpress-icon.png";
 import figma from "../../images/figma-icon.png";
 import postman from "../../images/postman.png";
 import git from "../../images/git.png";

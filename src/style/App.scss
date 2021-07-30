@@ -558,9 +558,11 @@ header {
 .youtube-video {
   width: 100vw;
   height: 100vh;
-  margin: auto auto;
+  position: relative;
   position: fixed;
-  z-index: 99999 !important;
+  left: 0;
+  top: 0;
+  z-index: 9999 !important;
   transition: 0.3s ease;
   &-wrap {
     display: flex;
@@ -576,11 +578,12 @@ header {
       top: 50px;
       cursor: pointer;
       div {
-        width: 50px;
+        width: 30px;
         height: 3px;
         background: #fff;
         margin: 5px 0;
         cursor: pointer;
+        transition: 0.1s ease-in-out;
       }
       div:nth-child(1) {
         transform: rotate(45deg) translateY(8px) translateX(3px);
@@ -588,6 +591,9 @@ header {
       div:nth-child(2) {
         transform: rotate(-45deg) translateY(-4px) translateX(-3px);
       }
+    }
+    .close-modal:hover div {
+      background: rgb(255, 55, 55);
     }
     .youtube-box {
       width: 75%;

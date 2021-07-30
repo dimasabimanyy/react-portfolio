@@ -6,11 +6,19 @@
   scroll-behavior: smooth;
 }
 
+.App {
+  position: relative;
+}
+
 body {
   background: #000000;
   font-family: "Sen", sans-serif;
   color: #ffffff;
   overflow-x: hidden !important;
+}
+
+body.hide-scroll {
+  overflow: hidden;
 }
 
 h1,
@@ -1449,9 +1457,11 @@ header:after {
 .youtube-video {
   width: 100vw;
   height: 100vh;
-  margin: auto auto;
+  position: relative;
   position: fixed;
-  z-index: 99999 !important;
+  left: 0;
+  top: 0;
+  z-index: 9999 !important;
   transition: 0.3s ease;
 }
 
@@ -1473,11 +1483,12 @@ header:after {
 }
 
 .youtube-video-wrap .close-modal div {
-  width: 50px;
+  width: 30px;
   height: 3px;
   background: #fff;
   margin: 5px 0;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
 
 .youtube-video-wrap .close-modal div:nth-child(1) {
@@ -1486,6 +1497,10 @@ header:after {
 
 .youtube-video-wrap .close-modal div:nth-child(2) {
   transform: rotate(-45deg) translateY(-4px) translateX(-3px);
+}
+
+.youtube-video-wrap .close-modal:hover div {
+  background: #ff3737;
 }
 
 .youtube-video-wrap .youtube-box {

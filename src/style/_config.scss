@@ -21,11 +21,19 @@ $purple-light: #6437ec;
   scroll-behavior: smooth;
 }
 
+.App {
+  position: relative;
+}
+
 body {
   background: $dark;
   font-family: $font-stack;
   color: $light;
   overflow-x: hidden !important;
+}
+
+body.hide-scroll {
+  overflow: hidden;
 }
 
 h1,
