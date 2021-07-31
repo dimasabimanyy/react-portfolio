@@ -1272,7 +1272,6 @@ header:after {
   width: 43%;
 }
 
-/* === PROJECTS === */
 #projects {
   padding: 6rem 0 2rem;
 }
@@ -1319,6 +1318,70 @@ header:after {
   font-weight: 700;
 }
 
+#projects .projects .project-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000000de;
+  left: 0;
+  top: 0;
+  z-index: 9999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .projects .project-modal img {
+  width: 65%;
+}
+
+@media all and (max-width: 1000px) {
+  #projects .projects .project-modal img {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #projects .projects .project-modal img {
+    width: 90%;
+  }
+}
+
+#projects .projects .project-modal .close-modal {
+  position: absolute;
+  right: 80px;
+  top: 50px;
+  cursor: pointer;
+}
+
+#projects .projects .project-modal .close-modal div {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+#projects .projects .project-modal .close-modal div:nth-child(1) {
+  transform: rotate(45deg) translateY(8px) translateX(3px);
+}
+
+#projects .projects .project-modal .close-modal div:nth-child(2) {
+  transform: rotate(-45deg) translateY(-4px) translateX(-3px);
+}
+
+#projects .projects .project-modal .close-modal:hover div {
+  background: #ff3737;
+}
+
+@media all and (max-width: 768px) {
+  #projects .projects .project-modal .close-modal {
+    right: 30px;
+    top: 30px;
+  }
+}
+
 #projects .projects .project {
   background: #181823;
 }
@@ -1326,13 +1389,42 @@ header:after {
 #projects .projects .project .project-image {
   width: 100%;
   height: 350px;
-  background: #cccccc;
+  position: relative;
+  cursor: pointer;
 }
 
 #projects .projects .project .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#projects .projects .project .project-image:hover::after {
+  background: #3a1c96b4;
+  z-index: 9;
+}
+
+#projects .projects .project .project-image i {
+  position: absolute;
+  left: 49%;
+  top: 49%;
+  font-size: 1.5rem;
+  z-index: 99;
+  color: rgba(255, 255, 255, 0);
+}
+
+#projects .projects .project .project-image:hover i {
+  color: #d0ecfcee;
+}
+
+#projects .projects .project .project-image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.15s ease-in;
 }
 
 #projects .projects .project-info {
@@ -1366,7 +1458,6 @@ header:after {
   font-size: 1.5rem;
 }
 
-/* === YOUTUBE === */
 #youtube {
   background: #fff3e4;
   padding: 4rem 0;
