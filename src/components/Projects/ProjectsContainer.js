@@ -3,7 +3,7 @@ import githubProfiler from "../../images/projects/Github Profiler.png";
 import hotelResort from "../../images/projects/Hotel Resort.png";
 import portfolioV4 from "../../images/projects/Portfolio v4.png";
 import covidTracker from "../../images/projects/Covid Tracker.png";
-import githubJobs from "../../images/projects/Github Jobs.png";
+import seafoam from "../../images/projects/seafoam.png";
 import laslesVpn from "../../images/projects/Lasles VPN.png";
 import ProjectsItems from "./ProjectsItems";
 
@@ -42,8 +42,19 @@ const ProjectsContainer = () => {
         "A website for booking hotel rooms online and by telephone. Built with React js and Contentful headless CMS to store the data. I also use styled component to style the front end.",
       stack: ["HTML & CSS", "React js", "Contentful CMS"],
     },
+
     {
       id: 4,
+      image: seafoam,
+      github: "https://github.com/dimasabimanyy/seafoam-theme",
+      preview:
+        "https://marketplace.visualstudio.com/items?itemName=DimasAbimanyu.seafoam-theme",
+      title: "Seafoam Theme",
+      description: `A dark green theme for Visual Studio Code. Available on Visual Studio Marketplace.`,
+      stack: ["VS Code"],
+    },
+    {
+      id: 5,
       image: laslesVpn,
       github: "https://github.com/dimasabimanyy/lasles-vpn-landing-page",
       preview: "https://lasleslite.netlify.app",
@@ -51,16 +62,6 @@ const ProjectsContainer = () => {
       description:
         "Simple landing page built with classic HTML, S(CSS) & Javascript.",
       stack: ["HTML & S(CSS)", "Javascript"],
-    },
-    {
-      id: 5,
-      image: githubJobs,
-      github: "https://github.com/dimasabimanyy/github-jobs",
-      preview: "https://githubboard.netlify.app/",
-      title: "Github Jobs Finder",
-      description:
-        "A nicer look to find a job from github. A website that works with the GitHub Jobs API that includes search, filter, pagination, etc.",
-      stack: ["React js", "Github API"],
     },
     {
       id: 6,
@@ -72,6 +73,16 @@ const ProjectsContainer = () => {
         "Forth iteration of my personal portfolio website. Built with Gatsby and Strapi Headless CMS.",
       stack: ["Gatsby", "Strapi", "S(CSS)"],
     },
+    // {
+    //   id: 5,
+    //   image: githubJobs,
+    //   github: "https://github.com/dimasabimanyy/github-jobs",
+    //   preview: "https://githubboard.netlify.app/",
+    //   title: "Github Jobs Finder",
+    //   description:
+    //     "A nicer look to find a job from github. A website that works with the GitHub Jobs API that includes search, filter, pagination, etc.",
+    //   stack: ["React js", "Github API"],
+    // },
   ];
 
   const showMore = () => {

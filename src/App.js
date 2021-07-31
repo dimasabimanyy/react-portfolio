@@ -14,7 +14,7 @@ import YoutubeModal from "./components/Youtube/YoutubeModal";
 
 function App() {
   const [loadTime, setLoadTime] = useState(true);
-  const [ytModal, setYtModal] = useState(true);
+  const [ytModal, setYtModal] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
