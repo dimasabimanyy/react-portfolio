@@ -26,28 +26,31 @@ const AboutText = () => {
           <li>
             <i class="fas fa-angle-right"></i> React js
           </li>
-          <li>
+          {/* <li>
             <i class="fas fa-angle-right"></i> Gatsby
-          </li>
+          </li> */}
           <li>
             <i class="fas fa-angle-right"></i> Javascript
           </li>
           <li>
             <i class="fas fa-angle-right"></i> HTML & S(CSS)
           </li>
+          <li>
+            <i class="fas fa-angle-right"></i> Laravel
+          </li>
         </ul>
         <ul>
-          <li>
+          {/* <li>
             <i class="fas fa-angle-right"></i> Vue js
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <i class="fas fa-angle-right"></i> Node js (Express)
-          </li>
+          </li> */}
           <li>
             <i class="fas fa-angle-right"></i> Wordpress
           </li>
           <li>
-            <i class="fas fa-angle-right"></i> Laravel
+            <i class="fas fa-angle-right"></i> Contentful CMS
           </li>
         </ul>
       </div>
